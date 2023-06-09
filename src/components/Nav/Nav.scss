@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  &__middleBlock {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 80px;
+
+    font-size: 18px;
+  }
+
+  &__lastBlock {
+    display: flex;
+    gap: 20px;
+
+    img {
+      width: 25px;
+    }
+  }
+}
