@@ -3,6 +3,7 @@
 
   &__main {
     padding: 100px;
+    padding-bottom: 0;
     padding-left: 90px;
 
     h3 {
@@ -58,11 +59,12 @@
       color: white;
 
       text-align: center;
+      margin-top: 15px;
     }
 
     &--gardening {
+      height: 390px;
       .mainImage {
-        width: 700px;
         transform: translate(-320px, -50px);
         filter: grayscale(100%);
       }

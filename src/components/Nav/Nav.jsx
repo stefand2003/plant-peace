@@ -1,7 +1,7 @@
 import React from 'react';
 import './Nav.scss';
 
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/logo1.svg';
 import Search from '../../assets/search.svg';
 import Account from '../../assets/account.svg';
 import Bag from '../../assets/bag.svg';
