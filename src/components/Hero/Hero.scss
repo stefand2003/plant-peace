@@ -1,0 +1,97 @@
+.hero {
+  display: flex;
+
+  &__main {
+    padding: 100px;
+    padding-left: 90px;
+
+    h3 {
+      font-family: fantasy;
+
+      font-size: 15px;
+      color: #000000;
+    }
+
+    &--leftInfo {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        gap: 15px;
+
+        letter-spacing: 2px;
+        font-size: 50px;
+        color: #364633;
+
+        font-weight: bold;
+
+        width: fit-content;
+
+        :last-child {
+          color: #8a9c6e;
+        }
+      }
+
+      h2 {
+        letter-spacing: 2px;
+        font-size: 50px;
+        color: #364633;
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        width: 550px;
+        color: #808276;
+
+        line-height: 26px;
+      }
+    }
+
+    button {
+      border: none;
+      padding: 15px;
+      width: 180px;
+      background-color: #354733;
+      color: white;
+
+      text-align: center;
+    }
+
+    &--gardening {
+      .mainImage {
+        width: 700px;
+        transform: translate(-320px, -50px);
+        filter: grayscale(100%);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        gap: 5px;
+
+        transform: translate(0px, -400px);
+
+        color: #354733;
+        font-size: small;
+
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    width: 765px;
+
+    filter: grayscale(100%);
+  }
+}

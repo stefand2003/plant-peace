@@ -1,11 +1,13 @@
 import './App.scss';
-import Color from './assets/color/color';
+
 import Nav from './components/Nav/Nav';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div>
       <Nav />
+      <Hero />
     </div>
   );
 }
