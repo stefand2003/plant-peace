@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import Grow from './components/GrowPlants/Grow';
 import Popular from './components/Popular/Popular';
+import Trending from './components/Trending/Trending';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Grow />
       <Popular />
+      <Trending />
     </div>
   );
 }
