@@ -6,6 +6,8 @@
   h2 {
     font-size: 50px;
     color: #354733;
+    text-align: center;
+
     .olive {
       color: #8a9b6e;
       background: none;
@@ -45,6 +47,7 @@
 
   &__cardsSection {
     display: flex;
+    justify-content: center;
     gap: 50px;
     .card {
       img {

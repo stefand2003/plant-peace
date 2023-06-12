@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Grow from './components/GrowPlants/Grow';
 import Popular from './components/Popular/Popular';
 import Trending from './components/Trending/Trending';
+import Garden from './components/Gardening/Garden';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Grow />
       <Popular />
       <Trending />
+      <Garden />
     </div>
   );
 }
