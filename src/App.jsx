@@ -6,6 +6,7 @@ import Grow from './components/GrowPlants/Grow';
 import Popular from './components/Popular/Popular';
 import Trending from './components/Trending/Trending';
 import Garden from './components/Gardening/Garden';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Popular />
       <Trending />
       <Garden />
+      <Footer />
     </div>
   );
 }
