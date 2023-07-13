@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_hero_intros",
+  "info": {
+    "displayName": "intro"
+  },
+  "options": {},
+  "attributes": {
+    "header1": {
+      "type": "string"
+    },
+    "header2": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "button": {
+      "type": "string"
+    }
+  }
+}

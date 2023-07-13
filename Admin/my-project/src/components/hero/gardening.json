@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_hero_gardenings",
+  "info": {
+    "displayName": "gardening"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "gardeningTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_nav_logos",
+  "info": {
+    "displayName": "logo"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "companyName": {
+      "type": "string"
+    }
+  }
+}

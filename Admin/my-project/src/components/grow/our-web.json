@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_grow_our_webs",
+  "info": {
+    "displayName": "ourWeb"
+  },
+  "options": {},
+  "attributes": {
+    "image1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "weBelieve": {
+      "displayName": "weBelieve",
+      "type": "component",
+      "repeatable": false,
+      "component": "grow.we-believe"
+    }
+  }
+}

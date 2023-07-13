@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "navs",
+  "info": {
+    "singularName": "nav",
+    "pluralName": "navs",
+    "displayName": "nav"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "displayName": "logo",
+      "type": "component",
+      "repeatable": false,
+      "component": "nav.logo"
+    },
+    "links": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": true,
+      "component": "nav.links"
+    },
+    "icons": {
+      "displayName": "icons",
+      "type": "component",
+      "repeatable": true,
+      "component": "nav.icons"
+    }
+  }
+}

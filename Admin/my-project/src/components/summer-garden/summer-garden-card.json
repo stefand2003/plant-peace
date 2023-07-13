@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_summer_garden_summer_garden_cards",
+  "info": {
+    "displayName": "summerGardenCard"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "productTitle": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}

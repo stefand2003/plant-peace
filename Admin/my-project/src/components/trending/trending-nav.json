@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_trending_trending_navs",
+  "info": {
+    "displayName": "trendingNav",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": true,
+      "component": "trending.links"
+    },
+    "trendingCard": {
+      "displayName": "trendingCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "trending.trending-card"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_newsletter_newsletters",
+  "info": {
+    "displayName": "newsletter"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "emailField": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    }
+  }
+}
