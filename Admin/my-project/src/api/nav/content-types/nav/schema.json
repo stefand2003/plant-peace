@@ -4,7 +4,8 @@
   "info": {
     "singularName": "nav",
     "pluralName": "navs",
-    "displayName": "nav"
+    "displayName": "nav",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

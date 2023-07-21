@@ -1,10 +1,11 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "newsletters",
   "info": {
     "singularName": "newsletter",
     "pluralName": "newsletters",
-    "displayName": "Newsletter"
+    "displayName": "Newsletter",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,20 +13,26 @@
   "pluginOptions": {},
   "attributes": {
     "backgroundPic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "newsletter": {
       "displayName": "newsletter",
       "type": "component",
       "repeatable": false,
       "component": "newsletter.newsletter"
+    },
+    "emails": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::email.email"
     }
   }
 }

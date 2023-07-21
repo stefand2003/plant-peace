@@ -4,7 +4,8 @@
   "info": {
     "singularName": "popular",
     "pluralName": "populars",
-    "displayName": "popular"
+    "displayName": "popular",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,11 @@
   "attributes": {
     "header": {
       "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
     }
   }
 }
