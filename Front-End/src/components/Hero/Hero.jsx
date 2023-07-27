@@ -1,38 +1,66 @@
 import React from 'react';
 import './Hero.scss';
 
-import LeftGarden from '../../assets/plantLeft.svg';
 import RightArrow from '../../assets/arrowDark.svg';
-import HeroImg from '../../assets/Hero.png';
+
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function Hero() {
+  const [intro, setIntro] = useState({});
+  const [gardening, setGardening] = useState({});
+  const [hero, setHero] = useState({});
+
+  const getHeroData = async () => {
+    try {
+      const response = await axios.get('http://localhost:1337/api/hero', {
+        params: {
+          'populate[intro]': true,
+          'populate[gardening][populate][image]': true,
+          'populate[hero]': true,
+        },
+      });
+
+      const { intro, gardening, hero } = response?.data?.data?.attributes;
+
+      setIntro(intro);
+      setGardening(gardening);
+      setHero(hero);
+    } catch (error) {
+      console.error('Error fetching data: ', error);
+    }
+  };
+
+  useEffect(() => {
+    getHeroData();
+  }, []);
+  console.log('hero', hero);
+  console.log('intro', intro);
+  console.log('gardening', gardening);
+
   return (
     <section className='hero'>
       <main className='hero__main'>
-        <h3>------ Love for Nature</h3>
+        <h3>------{intro.header1}</h3>
 
         <div className='hero__main--leftInfo'>
           <ul>
-            <li>Discover</li>
-            <li>Your</li>
-            <li>Green</li>
+            <li>{intro.header2}</li>
           </ul>
           <h2>Side</h2>
 
-          <p>
-            We are your one-stop destination for all things green and growing.
-            Our website offers a wide array of stunning plants, ranging from
-            vibrant flowers to lush indoor foliage, allowing you to create your
-            very own green oasis.
-          </p>
+          <p>{intro.description}</p>
         </div>
 
-        <button>Shop now</button>
+        <button>{intro.button}</button>
 
         <div className='hero__main--gardening'>
-          <img src={LeftGarden} className='mainImage' />
+          <img
+            src={`http://localhost:1337${gardening?.image?.data?.attributes?.url}`}
+            className='mainImage'
+          />
           <ul>
-            <li>Learn Gardening</li>
+            <li>{gardening.gardeningTitle}</li>
             <li>
               <img src={RightArrow} />
             </li>
@@ -40,7 +68,10 @@ export default function Hero() {
         </div>
       </main>
 
-      <img src={HeroImg} className='hero__image' />
+      <img
+        src={`http://localhost:1337${hero?.data?.attributes?.url}`}
+        className='hero__image'
+      />
     </section>
   );
 }
